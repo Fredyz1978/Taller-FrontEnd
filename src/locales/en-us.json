@@ -3,7 +3,7 @@
         "title": "Welcome to my Portfolio Webpage"
     },
     "landing": {
-        "title": "Welcome to my Portfolio"
+        "title": "Personal Portfolio Github"
     },
     "loader" : {
         "text": "loading..."
@@ -16,9 +16,21 @@
         "button_login": "Log in",
         "login_title": "Login Panel"
     },
+    "project": {
+        "err_project_empty": "Please input fields",
+        "title_placeholder": "title",
+        "description_placeholder": "description",
+        "tags_placeholder": "tags",
+        "version_placeholder": "version",
+        "button_delete": "Delete",
+        "button_post": "Post",
+        "project_title": "Project Input",
+        "newproject_title": "New Project Data"
+    },
     "nav": {
         "home": "Home",
-        "dashboard": "Dashboard",
+        "dashboard": "My Projects",
+        "newpost": "New Post",
         "admin": "Admin"
     },
     "aboutMeCard": {

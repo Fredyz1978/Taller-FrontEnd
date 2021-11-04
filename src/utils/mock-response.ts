@@ -4,7 +4,7 @@ import { Project } from "../model/project";
 
 export const mockLogin = (userName: string, password: string) => new Promise<TokenResponse>(function (resolve, rejected) {
     setTimeout(() => {
-        if (userName === "user@threepoints.com" && password === "patata") {
+        if (userName === "fredyzurita2210@gmail.com" && password === "Ecuador2021") {
             resolve(JSON.parse(
                 `{
                  "access_token" : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOnsidXNlcklkIjo2NjYsInJvbGUiOiJhZG1pbiIsInVzZXJOYW1lIjoiYWRtaW4iLCJkaXNwbGF5TmFtZSI6ImFkbWluIn0sImlhdCI6MTYwMTAyNzU1MywibmJmIjoxNjAxMDI3NTUzLCJleHAiOjE2MDExMTM5NTN9.vHgVtxKGmwDDLLVuT63UBkP8xe4a9hH0B3kkCsAh7K8",
@@ -35,15 +35,28 @@ export const mockAboutme = () => new Promise<AboutMe>(function (resolve, rejecte
         resolve(JSON.parse(
             `{
             "id":"12389asdfasf8",
-            "name":"Lucas Fernández Aragón",
-            "birthday":765817712000,
-            "nationality":"Spain",
-            "job":"Red Hat",
-            "github":"https://github.com/lucferbux"
+            "name":"Fredy Zurita Freire",
+            "birthday":277963750,
+            "nationality":"Ecuatoriano",
+            "job":"Desarrollador para Smartwork S.A.",
+            "github":"https://github.com/Fredyz1978"
             }`
         ));
     }, 500);
+});
 
+export const mockNewProject = (title: string, description: string, tags: string, version: string) => new Promise<Project>(function (resolve, rejected) {
+    setTimeout(() => {
+        resolve(JSON.parse(
+            `{
+                "id":"12349as8df90",
+                "title":"${title}",
+                "description":"${description}",
+                "version":"${version}",
+                "tag":"${tags}"
+            }`
+        ));
+    }, 500);
 });
 
 export const mockProjects = () => new Promise<Project[]>(function (resolve, rejected) {
@@ -52,20 +65,20 @@ export const mockProjects = () => new Promise<Project[]>(function (resolve, reje
             `[
                 {
                 "id":"12349as8df90",
-                "title":"React",
-                "description":"React es el Framework web basado en componentes de Facebook. Cuenta con una curva de aprendizaje corta y mucha flexibilidad",
-                "version":"17.0.1",
-                "link":"https://reactjs.org/docs/hello-world.html",
-                "tag":"JavaScript, Typescript, React",
+                "title":"Full Stack Curso Nivelador",
+                "description":"Este es un pequeño proyecto que usa express y cowsay para mostrar un mensaje. De manera adicional este proyecto realiza una petención get usando el puerto 3000.",
+                "version":"0.1",
+                "link":"https://github.com/Fredyz1978/FullStackCursoNivelador",
+                "tag":"JavaScript",
                 "timestamp":"765817712000"
                 },
                 {
                 "id":"789asdfas89",
-                "title":"Create React App",
-                "description":"Toolchain para la creación de proyectos basados en React, contiene lo báisco para crear proyectos basados en single-page apps",
-                "version":"4.0.3",
-                "link":"https://create-react-app.dev",
-                "tag":"Toolchain, React, Bootstraping",
+                "title":"Curso JavaScript",
+                "description":"JavaScript es uno de los lenguajes de programación más populares que existen en el mundo. De acuerdo a la encuesta anual de desarrolladores de Stack Overflow se encuentra en el número 1 de tecnologías más pupulares.",
+                "version":"1.0.0",
+                "link":"https://github.com/Fredyz1978/Javascript-Course",
+                "tag":"Hmtl",
                 "timestamp":"765817712001"
                 },
                 {
@@ -121,6 +134,15 @@ export const mockProjects = () => new Promise<Project[]>(function (resolve, reje
                 "link":"https://www.figma.com/proto/3e43h8TrzwpjfKwXvFxZoP/Taller?page-id=144%3A51&node-id=308%3A1187&viewport=254%2C48%2C0.12&scaling=min-zoom&starting-point-node-id=147%3A3",
                 "tag":"Vector, UX, UI",
                 "timestamp":"765817712007"
+                },
+                {
+                    "id":"7890asdf890",
+                    "title":"Typescript Webpack",
+                    "description":"Herramienta de diseño vectorial y prototipado",
+                    "version":"v0.1",
+                    "link":"https://github.com/Fredyz1978/TypescriptWeatherExample",
+                    "tag":"Typescript",
+                    "timestamp":"765817712007"
                 }
             ]`
         ));

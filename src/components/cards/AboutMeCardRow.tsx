@@ -6,25 +6,26 @@ import { MediumText } from "../../styles/TextStyles";
 interface AboutMeCardRowProps {
   title: string;
   value: string | number;
+  isLink: boolean;
 }
 
 const AboutMeCardRow = (props: AboutMeCardRowProps) => {
 
-    const formatDate = (value: string | number): string => {
-      if(typeof value === "number") {
-        let date = new Date(value);
-        return date.toLocaleDateString();
-      } else {
+  const formatDate = (value: string | number): string => {
+    if(typeof value === "number") {
+      let date = new Date(value);
+      return date.toLocaleDateString();
+    } else {
         return value;
-      }
+    }
   }
 
   return (
     <InfoDetailBox>
       <InfoKey>{props.title}</InfoKey>
       <InfoValueWrapper>
-          <InfoValue>{
-          formatDate(props.value)
+          <InfoValue>{ props.isLink ? <a href='https://github.com/Fredyz1978'>{formatDate(props.value)}</a> :
+                        formatDate(props.value)
           }</InfoValue>
       </InfoValueWrapper>
     </InfoDetailBox>
@@ -61,5 +62,4 @@ const InfoValue = styled(MediumText)`
   }
 `;
 
-export default AboutMeCardRow
-;
+export default AboutMeCardRow;

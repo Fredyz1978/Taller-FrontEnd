@@ -3,7 +3,7 @@
         "title": "Bienvenid@s a mi Web Portfolio"
     },
     "landing": {
-        "title": "Bienvenido a mi Portfolio"
+        "title": "Portafolio Personal Github"
     },
     "loader" : {
         "text": "cargando..."
@@ -16,9 +16,22 @@
         "button_login": "Entrar",
         "login_title": "Panel de Acceso"
     },
+    "project": {
+        "err_project_empty": "Debe ingresar los datos para crear el proyecto.",
+        "err_project_notcreate": "Debe ingresar los datos para crear el proyecto.",
+        "title_placeholder": "Título",
+        "description_placeholder": "descripción",
+        "tags_placeholder": "tags",
+        "version_placeholder": "versión",
+        "button_delete": "Eliminar",
+        "button_post": "Post",
+        "project_title": "Ingreso de Proyectos",
+        "newproject_title": "Datos de nuevo proyecto"
+    },
     "nav": {
         "home": "Inicio",
-        "dashboard": "Dashboard",
+        "dashboard": "Mis Proyectos",
+        "project": "Nuevo Proyecto",
         "admin": "Admin"
     },
     "aboutMeCard": {

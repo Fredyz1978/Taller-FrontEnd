@@ -15,6 +15,10 @@ export const menuData = [
     link: "/dashboard",
   },
   {
+    title: "nav.project",
+    link: "/project",
+  },
+  {
     title: "nav.admin",
     link: "/admin",
   },

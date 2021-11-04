@@ -22,17 +22,20 @@ const AboutMeCard = (props: AboutMeCardProps) => {
           <AboutMeCardRow
             title={t("aboutMeCard.name")}
             value={props.aboutMe.name}
+            isLink={false}
           />
           {props.aboutMe.birthday && (
             <AboutMeCardRow
               title={t("aboutMeCard.birthdate")}
               value={props.aboutMe.birthday}
+              isLink ={false}
             />
           )}
           {props.aboutMe.nationality && (
             <AboutMeCardRow
               title={t("aboutMeCard.nationality")}
               value={props.aboutMe.nationality}
+              isLink ={false}
             />
           )}
         </InfoSection>
@@ -42,12 +45,14 @@ const AboutMeCard = (props: AboutMeCardProps) => {
             <AboutMeCardRow
               title={t("aboutMeCard.occupation")}
               value={props.aboutMe.job}
+              isLink ={false}
             />
           )}
           {props.aboutMe.github && (
             <AboutMeCardRow
               title={t("aboutMeCard.github")}
               value={props.aboutMe.github}
+              isLink ={true}
             />
           )}
         </InfoSection>
